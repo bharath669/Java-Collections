@@ -8,8 +8,8 @@ class Main{
         values.add(13);
         values.add(23);
         values.add(77);
-        values.add(1,45);
-        // Collections.sort(values);
+        values.add(45);
+        Collections.sort(values);
 
         for(int i:values){
             System.out.println(i);
