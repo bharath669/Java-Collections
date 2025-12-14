@@ -1,17 +1,18 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.Collections;
+import java.util.List;
 
 class Main{
     public static void main(String[] args){
-        Collection values=new ArrayList();
+        List<Integer>values=new ArrayList<>();
         values.add(13);
-        values.add("Hello");
-        values.add(3.5f);
+        values.add(23);
+        values.add(77);
+        values.add(1,45);
+        // Collections.sort(values);
 
-        Iterator i=values.iterator();
-        while (i.hasNext()){
-            System.out.println(i.next());
+        for(int i:values){
+            System.out.println(i);
         } 
     }
 }
